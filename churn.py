@@ -50,7 +50,7 @@ def do_work_1(stop_event: threading.Event, i: int):
 
 stop_event = threading.Event()
 
-for i in range(0, 32):
+for i in range(0, 4):
     t0 = threading.Thread(target=do_work_0, args=(stop_event, i))
     t0.start()
     threads.append(t0)
